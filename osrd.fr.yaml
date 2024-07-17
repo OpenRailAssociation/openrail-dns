@@ -1,0 +1,77 @@
+osrd.fr:
+  # Records configuring osrd.fr
+  .:
+    - type: A
+      content: "185.199.108.153"
+    - type: A
+      content: "185.199.109.153"
+    - type: A
+      content: "185.199.110.153"
+    - type: A
+      content: "185.199.111.153"
+    - type: AAAA
+      content: "2606:50c0:8000::153"
+    - type: AAAA
+      content: "2606:50c0:8001::153"
+    - type: AAAA
+      content: "2606:50c0:8002::153"
+    - type: AAAA
+      content: "2606:50c0:8003::153"
+    - type: TXT
+      content: v=spf1 a mx include:mx.ovh.com -all
+    - type: MX
+      content: "smtp-in0.prod0.webspace.bz"
+      prio: 10
+    - type: MX
+      content: "smtp-in1.prod0.webspace.bz"
+      prio: 20
+  # *.osrd.fr
+  "*":
+    - type: A
+      content: "52.47.146.185"
+  # Specific Subdomains
+  osm:
+    - type: A
+      content: "52.47.146.185"
+  "*.osm":
+    - type: CNAME
+      content: osm.osrd.fr
+  bots:
+    - type: A
+      content: "51.44.5.238"
+  img:
+    - type: A
+      content: "62.210.122.67"
+  # Matrix
+  matrix:
+    - type: A
+      content: "15.237.94.156"
+    - type: MX
+      content: matrix.osrd.fr
+      prio: 10
+  # CNAMES
+  www:
+    - type: CNAME
+      content: "openrailassociation.github.io"
+  design:
+    - type: CNAME
+      content: "openrailassociation.github.io"
+  ui:
+    - type: CNAME
+      content: "openrailassociation.github.io"
+  element:
+    - type: CNAME
+      content: "matrix.osrd.fr"
+  etherpad:
+    - type: CNAME
+      content: "matrix.osrd.fr"
+  stats-matrix:
+    - type: CNAME
+      content: "matrix.osrd.fr"
+  # Mail etc
+  _dmarc:
+    - type: TXT
+      content: v=DMARC1; p=quarantine;
+  postmoogle._domainkey:
+    - type: TXT
+      content: "v=DKIM1; k=rsa; p=MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAz3RpzgJepUwbu9bAzqVIwRA3b/DEMZBAdGiJe/sSyUACdqGKvZpdA9/1WyKIcC8hKVzQZ2/rg46mOENZnbCWsMzWuxdXZ+W5PNr6q6pCsh6qwNAUWxlS9i6Cmpc7z07rRP6GJKqiBIfWs+a2Ry9Dzd2U+sQy1pmpeuSM6Mq4q5BBF3Dx8hueKNSANyZo+681NRe78CPsMfbmsgjS7qCia5jxzxXRo0UB9U8vO0e5Tx/jrV8a2pN+y6xx7SHfY6XMWhEHlpVCUIzOeyPzjyzovcbKAKtbQ/ppxwopvmOm2PsNz+0gf3xaHj9XA6VhZeKIvOxuvW19070EiXtIDIFqYZVOiAJM4rvNgaa+sXyOIQL9Ew7okxDU/JJ6xaOhX/twzhzSPXTl1cSW2U3Q37g7kb1Ji8/BIFro323xcY7ycvUIT2IgIbPBDIXLS9YC+8xlaZV1CQQmc3eSe0ajO1tALmTVT/XXjcpHFrxFS28FkEWp5fx9LTAWLr91q0XD1J/LAgMBAAE="
