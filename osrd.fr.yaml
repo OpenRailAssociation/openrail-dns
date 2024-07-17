@@ -25,6 +25,16 @@ osrd.fr:
     - type: MX
       content: "smtp-in1.prod0.webspace.bz"
       prio: 20
+    # Nameserver
+    - type: NS
+      content: ns.inwx.de
+      ttl: 86400
+    - type: NS
+      content: ns2.inwx.de
+      ttl: 86400
+    - type: NS
+      content: ns3.inwx.de
+      ttl: 86400
   # *.osrd.fr
   "*":
     - type: A
