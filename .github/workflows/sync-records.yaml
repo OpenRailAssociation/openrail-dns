@@ -1,0 +1,29 @@
+name: Synchronise DNS records
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  # Sync records using inwx-dns-recordmaster
+  sync-records:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install inwx-dns-recordmaster
+        run: pip install inwx-dns-recordmaster
+      - name: Create app configuration
+        run: |
+          mkdir -p $HOME/.config/inwx-dns-recordmaster/
+          cp config.toml $HOME/.config/inwx-dns-recordmaster/config.toml
+          # Replace secrets in app config
+          sed -i "s|__INWX_USER__|${{ secrets.INWX_USER }}|" $HOME/.config/inwx-dns-recordmaster/config.toml
+          sed -i "s|__INWX_PASS__|${{ secrets.INWX_PASS }}|" $HOME/.config/inwx-dns-recordmaster/config.toml
+      - name: Run inwx-dnsrm (dry mode in Pull Request)
+        run: inwx-dnsrm sync -c . --dry
+        if: github.event_name == 'pull_request'
+      - name: Run inwx-dnsrm (prod mode)
+        run: inwx-dnsrm sync -c .
+        if: github.event_name != 'pull_request'
