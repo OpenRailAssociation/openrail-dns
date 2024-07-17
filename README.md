@@ -12,7 +12,7 @@ Maintainers of OpenRail Association projects can request changes to their domain
 
 Requirements:
 
-* For each domain, a separate file shall be present, so please do not add your domain in another file.
+* For each domain, a separate file shall be present in [records](/records/), so please do not add your domain in another file.
 * Make sure that the file has the same name as your domain, so a file managing the domain `example.com` should be named `example.com.yaml`.
 
 After the changes have been approved and merged, the changes will be executed via GitHub actions which takes ~2 minutes. Please mote that DNS propagation can delay the effect on clients for typically 1 hours, in the worst case 24 hours.
