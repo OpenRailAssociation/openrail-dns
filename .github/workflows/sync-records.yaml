@@ -22,8 +22,8 @@ jobs:
           sed -i "s|__INWX_USER__|${{ secrets.INWX_USER }}|" $HOME/.config/inwx-dns-recordmaster/config.toml
           sed -i "s|__INWX_PASS__|${{ secrets.INWX_PASS }}|" $HOME/.config/inwx-dns-recordmaster/config.toml
       - name: Run inwx-dnsrm (dry mode in Pull Request)
-        run: inwx-dnsrm sync -c . --dry
+        run: inwx-dnsrm sync -c records --dry
         if: github.event_name == 'pull_request'
       - name: Run inwx-dnsrm (prod mode)
-        run: inwx-dnsrm sync -c .
+        run: inwx-dnsrm sync -c records
         if: github.event_name != 'pull_request'
