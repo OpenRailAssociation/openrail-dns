@@ -9,3 +9,7 @@ openrailassociation.com:
     - type: NS
       content: ns3.inwx.eu
       ttl: 86400
+# Mark as disabled email
+  _dmarc:
+    - type: TXT
+      content: v=DMARC1; p=reject;
