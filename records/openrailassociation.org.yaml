@@ -2,7 +2,6 @@ openrailassociation.org:
   .:
     - type: ALIAS
       content: openrailassociation.github.io
-      ttl: 300
     - type: MX
       content: leo.uberspace.de
       prio: 5
@@ -22,7 +21,6 @@ openrailassociation.org:
   www:
     - type: CNAME
       content: openrailassociation.github.io
-      ttl: 300
   # SERVICES
   auth:
     - type: A
@@ -43,10 +41,10 @@ openrailassociation.org:
       prio: 10
     - type: TXT
       content: v=spf1 a mx include:mail.mailman3.com ?all
-  # MAIL
   mail._domainkey.lists:
     - type: TXT
       content: v=DKIM1; h=sha256; k=rsa; s=email; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAni1NBVwNBtAU+Cr1xqbrULoMPGHaOGGqNhrh0VjdCILIB7T9aghrS4xWgSOY6v86buZchDKQpd1vNN10VFO+hapEoV8KXycq598uZ9pa+A1Jm0ab/+nbsfG9uQ9OsEtwX7upn0N4W7ojsayWmbtwGTkakRWBODGPTZ8J0YqE9fRjb9vnSCKfmDhIzRQ5VNn8OnCKudRPxZLzZx43tjumhZdIIPPVJsZgCZGZss2H5SCnsoARErsjLUusWtL8UUH0Bc/yRQ7i2CiWGrzrGmVjUswl5RGnkvSPz1tWEbCQDcnAR3mxgev0uaAzArhYvRmkuBtUz0/7vduemZHxj5DsNwIDAQAB
+  # MAIL
   uberspace._domainkey:
     - type: TXT
       content: v=DKIM1;t=s;n=core;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAymyMn4DGFeCXO9tuA8YiYY7NFbtyHlG2K8ZPDlwKXqGWfD5tFn0TSjMQUpFQeaQnNmE4eZtR5Bwu9yxdakrvoKqRUiIwd8T4qw/9hrhH+20lL7aRdN+QvB9lqBdPLb9tZVE6DxSKdqK+tuNnBxTGJ24z2p91qkp1RZYc2VFFBoKRELErD/ZwYPaA1MK8FTF/I3X0ZwXwzq0XWYvMfddhHTG2NlNdYUjekwuxMAdhpOzOQC7tewr1OzMKh3jY0abEG8yPs/ecuT3eMjGZse5XpmJQ+A+bq2C67rXtKKqeFNEvtALPzzOyuzb37oT1Kq1+ngJ30xJlMwFu/2aZ1NOzxQIDAQAB
@@ -57,6 +55,3 @@ openrailassociation.org:
   _github-challenge-openrailassociation-org:
     - type: TXT
       content: 3079f300e9
-  _gitlab-pages-verification-code:
-    - type: TXT
-      content: gitlab-pages-verification-code=0f358ff6bbf3fdfc2d57edc1fd645ae5
