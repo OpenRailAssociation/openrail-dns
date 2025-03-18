@@ -1,5 +1,6 @@
 # OpenRail DNS Records
 
+![OpenRail Administrative Project](https://openrailassociation.org/badges/openrail-project-admin.svg)
 [![Synchronise DNS records](https://github.com/OpenRailAssociation/openrail-dns/actions/workflows/sync-records.yaml/badge.svg)](https://github.com/OpenRailAssociation/openrail-dns/actions/workflows/sync-records.yaml)
 
 In order to make it easy for OpenRail projects to manage the DNS records of their project's domains, they can use this repository to configure them as code.
