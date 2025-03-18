@@ -1,0 +1,62 @@
+openrailassociation.org:
+  .:
+    - type: ALIAS
+      content: openrailassociation.github.io
+      ttl: 300
+    - type: MX
+      content: leo.uberspace.de
+      prio: 5
+    - type: TXT
+      content: v=spf1 a mx include:_spf.webspace.bz include:spf.uberspace.de ~all
+    # Nameserver
+    - type: NS
+      content: ns.inwx.de
+      ttl: 86400
+    - type: NS
+      content: ns2.inwx.de
+      ttl: 86400
+    - type: NS
+      content: ns3.inwx.eu
+      ttl: 86400
+  # WEBSITE
+  www:
+    - type: CNAME
+      content: openrailassociation.github.io
+      ttl: 300
+  # SERVICES
+  auth:
+    - type: A
+      content: 188.245.79.155
+    - type: AAAA
+      content: 2a01:4f8:c2c:2a08::1
+  share:
+    - type: A
+      content: 195.30.114.93
+    - type: AAAA
+      content: 2001:608:b:46::93
+  # MAILING LISTS
+  lists:
+    - type: A
+      content: 162.55.99.160
+    - type: MX
+      content: host4.mailman3.com
+      prio: 10
+    - type: TXT
+      content: v=spf1 a mx include:mail.mailman3.com ?all
+  # MAIL
+  mail._domainkey.lists:
+    - type: TXT
+      content: v=DKIM1; h=sha256; k=rsa; s=email; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAni1NBVwNBtAU+Cr1xqbrULoMPGHaOGGqNhrh0VjdCILIB7T9aghrS4xWgSOY6v86buZchDKQpd1vNN10VFO+hapEoV8KXycq598uZ9pa+A1Jm0ab/+nbsfG9uQ9OsEtwX7upn0N4W7ojsayWmbtwGTkakRWBODGPTZ8J0YqE9fRjb9vnSCKfmDhIzRQ5VNn8OnCKudRPxZLzZx43tjumhZdIIPPVJsZgCZGZss2H5SCnsoARErsjLUusWtL8UUH0Bc/yRQ7i2CiWGrzrGmVjUswl5RGnkvSPz1tWEbCQDcnAR3mxgev0uaAzArhYvRmkuBtUz0/7vduemZHxj5DsNwIDAQAB
+  uberspace._domainkey:
+    - type: TXT
+      content: v=DKIM1;t=s;n=core;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAymyMn4DGFeCXO9tuA8YiYY7NFbtyHlG2K8ZPDlwKXqGWfD5tFn0TSjMQUpFQeaQnNmE4eZtR5Bwu9yxdakrvoKqRUiIwd8T4qw/9hrhH+20lL7aRdN+QvB9lqBdPLb9tZVE6DxSKdqK+tuNnBxTGJ24z2p91qkp1RZYc2VFFBoKRELErD/ZwYPaA1MK8FTF/I3X0ZwXwzq0XWYvMfddhHTG2NlNdYUjekwuxMAdhpOzOQC7tewr1OzMKh3jY0abEG8yPs/ecuT3eMjGZse5XpmJQ+A+bq2C67rXtKKqeFNEvtALPzzOyuzb37oT1Kq1+ngJ30xJlMwFu/2aZ1NOzxQIDAQAB
+  _dmarc:
+    - type: TXT
+      content: v=DMARC1; p=none;
+  # VERIFICATIONS
+  _github-challenge-openrailassociation-org:
+    - type: TXT
+      content: 3079f300e9
+  _gitlab-pages-verification-code:
+    - type: TXT
+      content: gitlab-pages-verification-code=0f358ff6bbf3fdfc2d57edc1fd645ae5

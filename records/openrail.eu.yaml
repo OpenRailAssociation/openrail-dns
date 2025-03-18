@@ -1,0 +1,11 @@
+openrail.eu:
+  .:
+    - type: NS
+      content: ns.inwx.de
+      ttl: 86400
+    - type: NS
+      content: ns2.inwx.de
+      ttl: 86400
+    - type: NS
+      content: ns3.inwx.eu
+      ttl: 86400
