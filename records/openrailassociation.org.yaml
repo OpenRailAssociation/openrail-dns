@@ -21,6 +21,14 @@ openrailassociation.org:
   www:
     - type: CNAME
       content: openrailassociation.github.io
+  uberspace1:
+    - type: A
+      content: 95.143.172.56
+    - type: AAAA
+      content: 2001:1a50:11:0:3854:d4ff:fe62:e0d8
+  web-preview:
+    - type: CNAME
+      content: uberspace1.openrailassociation.org
   # SERVICES
   auth:
     - type: A
