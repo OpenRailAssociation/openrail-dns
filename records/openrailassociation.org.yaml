@@ -40,6 +40,9 @@ openrailassociation.org:
       content: 195.30.114.93
     - type: AAAA
       content: 2001:608:b:46::93
+  chat:
+    - type: CNAME
+      content: zulip-chat-u33179.vm.elestio.app
   # MAILING LISTS
   lists:
     - type: A
