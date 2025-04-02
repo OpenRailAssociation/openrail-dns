@@ -17,8 +17,11 @@ openrailassociation.org:
     - type: NS
       content: ns3.inwx.eu
       ttl: 86400
-  # WEBSITE
+  # WEBSITES
   www:
+    - type: CNAME
+      content: openrailassociation.github.io
+  projects:
     - type: CNAME
       content: openrailassociation.github.io
   uberspace1:
