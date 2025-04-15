@@ -39,13 +39,8 @@ openrailassociation.org:
     - type: AAAA
       content: 2a01:4f8:c2c:2a08::1
   share:
-    - type: A
-      content: 195.30.114.93
-    - type: AAAA
-      content: 2001:608:b:46::93
-  chat:
     - type: CNAME
-      content: zulip-chat-u33179.vm.elestio.app
+      content: nx70288.your-storageshare.de
   # MAILING LISTS
   lists:
     - type: A
