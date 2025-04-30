@@ -41,6 +41,14 @@ openrailassociation.org:
   share:
     - type: CNAME
       content: nx70288.your-storageshare.de
+  matrix:
+    - type: A
+      content: 91.99.88.93
+    - type: AAAA
+      content: 2a01:4f8:c012:7019::1
+  element:
+    - type: CNAME
+      content: matrix.openrailassociation.org
   # MAILING LISTS
   lists:
     - type: A
