@@ -32,9 +32,12 @@ openrailassociation.org:
   web-preview: # Preview of the website
     - type: CNAME
       content: uberspace1.openrailassociation.org
-  l: # Shortlinks
+  link: # Shortlinks
     - type: CNAME
       content: uberspace1.openrailassociation.org
+  l: # Shortlinks
+    - type: CNAME
+      content: link.openrailassociation.org
   # SERVICES
   auth: # Authentik
     - type: A
