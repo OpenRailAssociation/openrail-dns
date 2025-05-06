@@ -29,26 +29,32 @@ openrailassociation.org:
       content: 95.143.172.56
     - type: AAAA
       content: 2001:1a50:11:0:3854:d4ff:fe62:e0d8
-  web-preview:
+  web-preview: # Preview of the website
+    - type: CNAME
+      content: uberspace1.openrailassociation.org
+  l: # Shortlinks
     - type: CNAME
       content: uberspace1.openrailassociation.org
   # SERVICES
-  auth:
+  auth: # Authentik
     - type: A
       content: 188.245.79.155
     - type: AAAA
       content: 2a01:4f8:c2c:2a08::1
-  share:
+  share: # Nextcloud
     - type: CNAME
       content: nx70288.your-storageshare.de
-  matrix:
+  matrix: # Matrix
     - type: A
       content: 91.99.88.93
     - type: AAAA
       content: 2a01:4f8:c012:7019::1
-  element:
+  element: # Matrix chat interface (Element)
     - type: CNAME
       content: matrix.openrailassociation.org
+  chat: # Alias for Element
+    - type: CNAME
+      content: element.openrailassociation.org
   # MAILING LISTS
   lists:
     - type: A
