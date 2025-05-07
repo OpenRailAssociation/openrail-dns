@@ -1,7 +1,7 @@
 openrailassociation.org:
   .:
     - type: ALIAS
-      content: openrailassociation.github.io
+      content: uberspace1.openrailassociation.org
     - type: MX
       content: leo.uberspace.de
       prio: 5
@@ -20,7 +20,7 @@ openrailassociation.org:
   # WEBSITES
   www:
     - type: CNAME
-      content: openrailassociation.github.io
+      content: uberspace1.openrailassociation.org
   projects:
     - type: CNAME
       content: openrailassociation.github.io
