@@ -81,3 +81,6 @@ openrailassociation.org:
   _github-challenge-openrailassociation-org:
     - type: TXT
       content: 3079f300e9
+  osrd: # Demo app hosted by Flatland
+    - type: A
+      content: 138.124.232.220
