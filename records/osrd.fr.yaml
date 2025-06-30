@@ -78,6 +78,9 @@ osrd.fr:
   stats-matrix:
     - type: CNAME
       content: "matrix.osrd.fr"
+  demo:
+    - type: CNAME
+      content: "osrd.openrailassociation.org"
   # Mail etc
   _dmarc:
     - type: TXT
