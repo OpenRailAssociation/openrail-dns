@@ -68,7 +68,7 @@ osrd.fr:
       content: "openrailassociation.github.io"
   ui:
     - type: CNAME
-      content: "openrailassociation.github.io"
+      content: "uberspace1.openrailassociation.org"
   element:
     - type: CNAME
       content: "matrix.osrd.fr"
