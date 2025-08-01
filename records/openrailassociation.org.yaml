@@ -23,7 +23,7 @@ openrailassociation.org:
       content: uberspace1.openrailassociation.org
   projects:
     - type: CNAME
-      content: openrailassociation.github.io
+      content: uberspace1.openrailassociation.org
   uberspace1:
     - type: A
       content: 95.143.172.56
