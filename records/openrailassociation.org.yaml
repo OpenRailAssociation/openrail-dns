@@ -84,3 +84,10 @@ openrailassociation.org:
   osrd: # Demo app hosted by Flatland
     - type: A
       content: 157.90.149.53
+  day: # Openrail day at Paris on LWS
+    - type: A
+      content: 3.215.100.79
+      ttl: 1800
+    - type: A
+      content: 3.234.189.133
+      ttl: 1800
