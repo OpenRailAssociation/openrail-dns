@@ -84,7 +84,10 @@ openrailassociation.org:
   osrd: # Demo app hosted by Flatland
     - type: A
       content: 157.90.149.53
-  day: # HACK: Openrail day at Paris on flomonster server forwarded ot LWS
-    - type: A
-      content: 116.203.253.56
+  day: # use cargo site dns for openrail day @ paris
+    - type: NS
+      content: ns1.cargo.site
+      ttl: 1800
+    - type: NS
+      content: ns2.cargo.site
       ttl: 1800
