@@ -85,9 +85,6 @@ openrailassociation.org:
     - type: A
       content: 157.90.149.53
   day: # use cargo site dns for openrail day @ paris
-    - type: NS
-      content: ns1.cargo.site
-      ttl: 1800
-    - type: NS
-      content: ns2.cargo.site
+    - type: CNAME
+      content: 162137-copy.cargo.site
       ttl: 1800
