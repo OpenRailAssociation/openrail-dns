@@ -1,1 +1,1 @@
-inwx-dns-recordmaster==1.0.0
+inwx-dns-recordmaster==1.0.1
