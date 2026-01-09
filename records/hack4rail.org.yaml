@@ -14,9 +14,6 @@ hack4rail.org:
   www:
     - type: CNAME
       content: uberspace1.openrailassociation.org
-  preview:
-    - type: CNAME
-      content: uberspace1.openrailassociation.org
   # Mark as disabled email
   _dmarc:
     - type: TXT

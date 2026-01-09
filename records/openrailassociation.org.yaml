@@ -17,6 +17,12 @@ openrailassociation.org:
     - type: NS
       content: ns3.inwx.eu
       ttl: 86400
+  # WEBHOSTING
+  uberspace1:
+    - type: A
+      content: 95.143.172.56
+    - type: AAAA
+      content: 2001:1a50:11:0:3854:d4ff:fe62:e0d8
   # WEBSITES
   www:
     - type: CNAME
@@ -24,11 +30,9 @@ openrailassociation.org:
   projects:
     - type: CNAME
       content: uberspace1.openrailassociation.org
-  uberspace1:
-    - type: A
-      content: 95.143.172.56
-    - type: AAAA
-      content: 2001:1a50:11:0:3854:d4ff:fe62:e0d8
+  hack4rail: # Hack4Rail website, as long as hack4rail.org cannot be used officially
+    - type: CNAME
+      content: hack4rail.org
   web-preview: # Preview of the website
     - type: CNAME
       content: uberspace1.openrailassociation.org
