@@ -1,7 +1,7 @@
 hack4rail.org:
   .:
     - type: ALIAS
-      content: openrailassociation.github.io
+      content: uberspace1.openrailassociation.org
     - type: NS
       content: ns.inwx.de
       ttl: 86400
@@ -13,7 +13,10 @@ hack4rail.org:
       ttl: 86400
   www:
     - type: CNAME
-      content: openrailassociation.github.io
+      content: uberspace1.openrailassociation.org
+  preview:
+    - type: CNAME
+      content: uberspace1.openrailassociation.org
   # Mark as disabled email
   _dmarc:
     - type: TXT
