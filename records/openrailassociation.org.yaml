@@ -23,6 +23,27 @@ openrailassociation.org:
       content: 95.143.172.56
     - type: AAAA
       content: 2001:1a50:11:0:3854:d4ff:fe62:e0d8
+  # SERVERS
+  eio-auth.srv:
+    - type: A
+      content: 188.245.79.155
+    - type: AAAA
+      content: 2a01:4f8:c2c:2a08::1
+  htz-matrix.srv:
+    - type: A
+      content: 91.99.88.93
+    - type: AAAA
+      content: 2a01:4f8:c012:7019::1
+  htz-osrd-demo.srv:
+    - type: A
+      content: 157.90.149.53
+    - type: AAAA
+      content: 2a01:4f8:c014:a6e2::1
+  htz-nc-hpb.srv:
+    - type: A
+      content: 157.90.150.241
+    - type: AAAA
+      content: 2a01:4f8:c010:a2f7::1
   # WEBSITES
   www:
     - type: CNAME
@@ -42,26 +63,31 @@ openrailassociation.org:
   l: # Shortlinks
     - type: CNAME
       content: link.openrailassociation.org
+  day: # use cargo site dns for openrail day @ paris
+    - type: CNAME
+      content: subdomain.cargo.site
   # SERVICES
   auth: # Authentik
-    - type: A
-      content: 188.245.79.155
-    - type: AAAA
-      content: 2a01:4f8:c2c:2a08::1
+    - type: CNAME
+      content: eio-auth.srv.openrailassociation.org
   share: # Nextcloud
     - type: CNAME
       content: nx70288.your-storageshare.de
   matrix: # Matrix
-    - type: A
-      content: 91.99.88.93
-    - type: AAAA
-      content: 2a01:4f8:c012:7019::1
+    - type: CNAME
+      content: htz-matrix.srv.openrailassociation.org
   element: # Matrix chat interface (Element)
     - type: CNAME
       content: matrix.openrailassociation.org
   chat: # Will redirect to Element using htaccess redirection
     - type: CNAME
       content: uberspace1.openrailassociation.org
+  osrd: # OSRD demo website
+    - type: CNAME
+      content: htz-osrd-demo.srv.openrailassociation.org
+  nc-hpb: # Nextcloud instance for the High Performance Backend
+    - type: CNAME
+      content: htz-nc-hpb.srv.openrailassociation.org
   # MAILING LISTS
   lists:
     - type: A
@@ -85,10 +111,3 @@ openrailassociation.org:
   _github-challenge-openrailassociation-org:
     - type: TXT
       content: 3079f300e9
-  osrd: # Demo app hosted by Flatland
-    - type: A
-      content: 157.90.149.53
-  day: # use cargo site dns for openrail day @ paris
-    - type: CNAME
-      content: subdomain.cargo.site
-      ttl: 1800
