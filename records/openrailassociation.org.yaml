@@ -85,7 +85,7 @@ openrailassociation.org:
   osrd: # OSRD demo website
     - type: CNAME
       content: htz-osrd-demo.srv.openrailassociation.org
-  nc-hpb: # Nextcloud instance for the High Performance Backend
+  hpb.share: # Instance for the Nextcloud High Performance Backend
     - type: CNAME
       content: htz-nc-hpb.srv.openrailassociation.org
   # MAILING LISTS
