@@ -81,6 +81,9 @@ osrd.fr:
   demo:
     - type: CNAME
       content: "osrd.openrailassociation.org"
+  tuyau:
+    - type: CNAME
+      content: "osrd.openrailassociation.org"
   # Mail etc
   _dmarc:
     - type: TXT
